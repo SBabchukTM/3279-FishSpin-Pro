@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0455419a288a2344a6943f48b037bde, type: 3}
+  m_Name: FishesConfig
+  m_EditorClassIdentifier: 
+  Fishes:
+  - Sprite: {fileID: 21300000, guid: 7a0b20f393a64034e95e63bbe0e86092, type: 3}
+    Name: Common Carp
+    Temperature: "18-25\xB0C"
+    FavFood: Insects, plants, and bottom debris
+    FunFact: Can live over 40 years and remember fishing spots for months!
+    BestTime: 'Dawn and dusk in summer '
+    Color: {r: 1, g: 0.41960785, b: 0.41960785, a: 1}
+  - Sprite: {fileID: 21300000, guid: 7c1a2b6c293ca0744b9b209de5f6e02d, type: 3}
+    Name: Northern Pike
+    Temperature: "10-15\xB0C"
+    FavFood: Fish, frogs, and even small waterfowl
+    FunFact: Can grow over 1.5m long and has over 700 razor-sharp teeth!
+    BestTime: Early spring and autumn mornings
+    Color: {r: 1, g: 0.7058824, b: 0, a: 1}
+  - Sprite: {fileID: 21300000, guid: e95cd8a4ab54c914882e8edf2bb37fdd, type: 3}
+    Name: European Perch
+    Temperature: "12-20\xB0C"
+    FavFood: Small fish, worms, and aquatic insects
+    FunFact: Has distinctive vertical "tiger stripes" that fade with age
+    BestTime: 'Active year-round, especially middayr '
+    Color: {r: 1, g: 0.8509804, b: 0.23921569, a: 1}
+  - Sprite: {fileID: 21300000, guid: 4caf0597e6a35b64ebc734596b511bbc, type: 3}
+    Name: Roach
+    Temperature: "14-20\xB0C"
+    FavFood: Algae, aquatic plants
+    FunFact: Schools can contain thousands of fish moving as one!
+    BestTime: Early morning in summer
+    Color: {r: 0.41960785, g: 0.79607844, b: 0.46666667, a: 1}
+  - Sprite: {fileID: 21300000, guid: 4b5bd7db9381b9a48898e21e2c5195de, type: 3}
+    Name: Tench
+    Temperature: "20-24\xB0C"
+    FavFood: Mollusks, worms, and aquatic larvae
+    FunFact: Called "doctor fish" - legend says its slime heals other fish
+    BestTime: Summer evenings in weedy areas
+    Color: {r: 0.3019608, g: 0.5882353, b: 1, a: 1}
+  - Sprite: {fileID: 21300000, guid: 78a3cea5ab499ef4897de4e0b37ca77c, type: 3}
+    Name: Common Bream
+    Temperature: "15-20\xB0C"
+    FavFood: Bloodworms, mollusks, and bottom organisms
+    FunFact: Can form massive shoals that muddy entire lake sections
+    BestTime: Night fishing in summer
+    Color: {r: 0.5176471, g: 0.36862746, b: 0.7607843, a: 1}
+  - Sprite: {fileID: 21300000, guid: f13e9809d39947646b697dc48772c726, type: 3}
+    Name: Chub
+    Temperature: "8-22\xB0C"
+    FavFood: Everything - insects, fruit, bread, small fish
+    FunFact: Extremely wary - will flee from shadows on the water
+    BestTime: All year, especially overcast days
+    Color: {r: 0.9764706, g: 0.40392157, b: 0.6156863, a: 1}
+  - Sprite: {fileID: 21300000, guid: c52c8e479a2c072409fb3a6182701383, type: 3}
+    Name: Barbel
+    Temperature: "15-18\xB0C"
+    FavFood: Caddis larvae, snails, and crayfish
+    FunFact: Has four sensitive barbels to find food in murky water
+    BestTime: Autumn floods
+    Color: {r: 0, g: 0.7882353, b: 0.654902, a: 1}
+  - Sprite: {fileID: 21300000, guid: c90e75af1e3e626468e7725106b88b3c, type: 3}
+    Name: Brown Trout
+    Temperature: "10-15\xB0C"
+    FavFood: Mayflies, caddis, and small fish
+    FunFact: Can change color in seconds to match surroundings
+    BestTime: Dawn and dusk year-round
+    Color: {r: 0.7647059, g: 0.2901961, b: 0.21176471, a: 1}
+  - Sprite: {fileID: 21300000, guid: 6a00696ce1f8c194bb071c7402427ad4, type: 3}
+    Name: Grayling
+    Temperature: "4-18\xB0C"
+    FavFood: Aquatic insects and fly larvae
+    FunFact: Fresh grayling smell distinctly like wild thyme
+    BestTime: 'Winter months '
+    Color: {r: 0.6117647, g: 0.11372549, b: 0.90588236, a: 1}
+  - Sprite: {fileID: 21300000, guid: e7cc6a4019c536d479311ed88d326efd, type: 3}
+    Name: Rudd
+    Temperature: "18-23\xB0C"
+    FavFood: Surface insects, aquatic plants
+    FunFact: Golden-bronze scales shine like coins in sunlight
+    BestTime: Summer evenings near lily pads
+    Color: {r: 1, g: 0.78039217, b: 0.37254903, a: 1}
+  - Sprite: {fileID: 21300000, guid: 7e0199626e782d6419e3fdc9c44ab997, type: 3}
+    Name: Dace
+    Temperature: "12-18\xB0C"
+    FavFood: Flying insects, small invertebrates
+    FunFact: One of the smallest game fish but fights hard for its size
+    BestTime: Bright daylight hours
+    Color: {r: 0.9764706, g: 0.972549, b: 0.44313726, a: 1}
+  - Sprite: {fileID: 21300000, guid: c2e9e724a899db64b90fe123568fffea, type: 3}
+    Name: European Eel
+    Temperature: "4-20\xB0C"
+    FavFood: Fish, worms, crustaceans (at night)
+    FunFact: Swims 6,000km to Sargasso Sea to spawn once in life
+    BestTime: Dark, warm summer nights
+    Color: {r: 0, g: 0.5058824, b: 0.8117647, a: 1}
+  - Sprite: {fileID: 21300000, guid: 1731c5bbb021e1948a03c5829f7191e6, type: 3}
+    Name: Wels Catfish
+    Temperature: "20-25\xB0C"
+    FavFood: Fish, birds, rodents
+    FunFact: Europe's giant - can exceed 2.5m and live 80+ years
+    BestTime: Night fishing in deep holes
+    Color: {r: 0.7647059, g: 0.16862746, b: 0.6784314, a: 1}
+  - Sprite: {fileID: 21300000, guid: bb00972a067d9de4d9e47f4c9528534c, type: 3}
+    Name: Zander
+    Temperature: "12-18\xB0C"
+    FavFood: Small fish, especially 8-12cm prey
+    FunFact: Has special reflective eyes for perfect night vision
+    BestTime: Dawn and dusk in murky water
+    Color: {r: 0.2509804, g: 0.7882353, b: 0.63529414, a: 1}

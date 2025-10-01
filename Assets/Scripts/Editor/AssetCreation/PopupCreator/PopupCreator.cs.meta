@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c0740a689d8fdbf4da616c8d84b526fc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - m_VisualTreeAsset: {fileID: 9197481963319205126, guid: 577c6a4b1630593489644c1c2af06fba, type: 3}
+  - PopupPrefab: {fileID: 4009671047421245936, guid: 31147dbfc90415d4f9fcd25ddb07b8e4, type: 3}
+  - _scriptTemplate: {fileID: 4900000, guid: 74ed749b78e8a584e9aa50ec61830e3b, type: 3}
+  - _scriptDataTemplate: {instanceID: 0}
+  - _scriptStateControllerTemplate: {fileID: 4900000, guid: 81b3bb7ca8d84ec19c4da72ba35d4156, type: 3}
+  - _gameUiContainer: {fileID: 815507693410754425, guid: 2942d8b4e0027a34587fb62f3e7c05a4, type: 3}
+  - _constPopupsNamesFile: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

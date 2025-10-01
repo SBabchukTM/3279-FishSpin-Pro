@@ -1,0 +1,28 @@
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using UI.Screens;
+
+namespace Runtime.Game.GameStates.Game.Screens
+{
+    public class #NAME#StateController : StateController
+    {
+        private readonly GameUIContainer _uiContainer;
+        
+        private #NAME# _screen;
+        
+        public #NAME#StateController(GameUIContainer uiContainer)
+        {
+            _uiContainer = uiContainer;
+        }
+        
+        public override async UniTask EnterState()
+        {
+            _screen = await _uiContainer.CreateScreen<#NAME#>();
+        }
+        
+        public override async UniTask ExitState()
+        {
+            await _uiContainer.HideScreen<#NAME#>();
+        }   
+    }
+}
