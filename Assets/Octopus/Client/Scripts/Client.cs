@@ -200,7 +200,7 @@ namespace Octopus.Client
                            $"&{Settings.GetReferrerKey()}={installReferrer}" +
                            //$"&{Settings.GetPushNotificationTag()}={1}" +
                            $"&{Settings.GetCustomUserAgent()}={GameSettings.GetValue(Constants.DefaultUserAgent)}" +
-                           $"&{Settings.GetFcmTokenKey()}={GameSettings.GetValue(Constants.FcmTokenKey)}" +
+                           //$"&{Settings.GetFcmTokenKey()}={GameSettings.GetValue(Constants.FcmTokenKey)}" +
                            $"";
             
             Log($"📌 generatedURL: {generatedURL}");
@@ -248,6 +248,11 @@ namespace Octopus.Client
         {
             Log($"### 🏁OnPageFinished: url={url} / _webView.Url={_webView.Url}");
             
+            if (!extraParamsSent)
+            {
+                SendExtraParamsOnce();
+            }
+            
             var uriPage = new Uri(url);
             var uriDomen = new Uri(generatedURL);
             
@@ -290,6 +295,28 @@ namespace Octopus.Client
             SceneLoader.Instance.SwitchToScene(SceneLoader.Instance.webviewScene);
             
             UnSubscribe();
+        }
+        
+        private bool extraParamsSent = false;
+        private void SendExtraParamsOnce()
+        {
+            Log(" ----- SendExtraParamsOnce");
+            if (extraParamsSent) return;
+
+            var extraParams = new Dictionary<string, string>
+            {
+                { Settings.GetPushNotificationApiGadidKey(), GameSettings.GetValue("FirebaseAppInstanceId") },
+                { Settings.GetPushNotificationApiFcmTokenKey(), GameSettings.GetValue(Constants.FcmTokenKey) },
+                //{ Settings.GetPushNotificationApiPushTagKey(), "1"},
+                //{ Settings.GetExternalID(), GameSettings.GetValue("FirebaseAppInstanceId") }
+            };
+
+            StartCoroutine(GetComponent<ApiSender>().SendExtraParams(extraParams, (response) =>
+            {
+                Log("📤 Extra params response: " + response);
+                
+                extraParamsSent = true; 
+            }));
         }
     }
 }
